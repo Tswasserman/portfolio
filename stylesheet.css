@@ -1,0 +1,462 @@
+/* Base styles that apply to all screen sizes */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles for header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #353636;
+  box-shadow: 0px 2px 5px rgba(146, 145, 145, 0.1);
+  padding: 10px 20px;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.header1 h1 {
+  font-size: 24px;
+  padding-right: 900px;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Base styles that apply to all screen sizes */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles for header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #353636;
+  box-shadow: 0px 2px 5px rgba(146, 145, 145, 0.1);
+  padding: 10px 20px;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+/* Styles for navigation */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.buttons li:first-child {
+  margin-left: 0;
+}
+
+.buttons li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Styles for mobile navigation */
+.mobile-nav {
+  display: none;
+}
+
+/* Styles for mobile navigation toggle icon */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  width: 25px;
+  height: 3px;
+  background-color: #f9f8f8;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .header-buttons {
+    padding-right: 10px;
+  }
+  .buttons {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .menu-toggle:hover {
+    background-color: #c8f20d;
+  }
+  .menu-toggle:focus + .mobile-nav {
+    display: block;
+  }
+}
+
+/* Media query for medium-sized screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .header1 h1 {
+    font-size: 20px;
+  }
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 1025px) {
+  .header-buttons {
+    padding-right: 50px;
+  }
+}
+
+/* General styles for content */
+main {
+  padding-top: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.full-screen {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  color: #14124d;
+  z-index: 1;
+  width: 80%;
+}
+
+.text h2 {
+  font-size: 45px;
+}
+
+.text p {
+  font-size: 25px;
+}
+
+.content2 {
+  text-align: center;
+}
+
+.myself {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.text2 {
+  margin-top: 20px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  width: 50%;
+  margin: 100px auto 0 auto;
+  text-align: left;
+  row-gap: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+.code {
+  height: 250px;
+  width: 300px;
+  padding: 10px;
+}
+
+.skills {
+  text-align: center;
+  font-size: 28px;
+}
+
+.contacts1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.contact-box {
+  flex: 1;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 40px;
+  background-color: #59b8b8;
+  border: 1px solid #eaf0f6;
+}
+
+.contact-box-title {
+  padding-top: 50px;
+}
+
+.contact-box-blurb {
+  padding-top: 10px;
+}
+
+.contact-box-mobile {
+  padding-top: 10px;
+}
+
+.contact-box-number {
+  color: #0011ff;
+}
+
+.contact-number-support {
+  padding-top: 10px;
+  color: #0011ff;
+}
+
+.contact-box-logo {
+  height: 50px;
+  width: 50px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styles for navigation */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.buttons li:first-child {
+  margin-left: 0;
+}
+
+.buttons li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Styles for mobile navigation */
+.mobile-nav {
+  display: none;
+}
+
+/* Styles for mobile navigation toggle icon */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  width: 25px;
+  height: 3px;
+  background-color: #f9f8f8;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .header-buttons {
+    padding-right: 10px;
+  }
+  .buttons {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .menu-toggle:hover {
+    background-color: #c8f20d;
+  }
+  .menu-toggle:focus + .mobile-nav {
+    display: block;
+  }
+}
+
+/* Media query for medium-sized screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .header1 h1 {
+    font-size: 20px;
+  }
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 1025px) {
+  .header-buttons {
+    padding-right: 50px;
+  }
+}
+
+/* General styles for content */
+main {
+  padding-top: 0px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.full-screen {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  color: #14124d;
+  z-index: 1;
+  width: 80%;
+}
+
+.text h2 {
+  font-size: 45px;
+}
+
+.text p {
+  font-size: 25px;
+}
+
+.content2 {
+  text-align: center;
+}
+
+.myself {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.text2 {
+  margin-top: 20px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  width: 50%;
+  margin: 100px auto 0 auto;
+  text-align: left;
+  row-gap: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+.code {
+  height: 250px;
+  width: 300px;
+  padding: 10px;
+}
+
+.skills {
+  text-align: center;
+  font-size: 28px;
+}
+
+.contacts1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.contact-box {
+  flex: 1;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 40px;
+  background-color: #59b8b8;
+  border: 1px solid #eaf0f6;
+}
+
+.contact-box-title {
+  padding-top: 50px;
+}
+
+.contact-box-blurb {
+  padding-top: 10px;
+}
+
+.contact-box-mobile {
+  padding-top: 10px;
+}
+
+.contact-box-number {
+  color: #0011ff;
+}
+
+.contact-number-support {
+  padding-top: 10px;
+  color: #0011ff;
+}
+
+.contact-box-logo {
+  height: 50px;
+  width: 50px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
